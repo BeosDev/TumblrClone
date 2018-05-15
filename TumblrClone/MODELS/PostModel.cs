@@ -20,5 +20,11 @@ namespace TumblrClone.MODELS
         {
             return DataProvider.Instance.ExecuteQuery("SELECT * FROM POST");
         }
+
+        public string getNameImg(int id)
+        {
+            return DataProvider.Instance.ExecuteScalar("SELECT IMAGE_URL FROM POST WHERE ID = @ID ",
+                new object[] {id}).ToString();
+        }
     }
 }

@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI.WebControls;
 using TumblrClone.MODELS;
+using TumblrClone.MODELS.DAO;
 
 namespace TumblrClone.CONTROLLERS
 {
@@ -18,7 +20,14 @@ namespace TumblrClone.CONTROLLERS
 
         internal void loadPost(ref Repeater rpt)
         {
-            rpt.DataSource = PostModel.Instance.getPosts();
+            DataTable db = PostModel.Instance.getPosts();
+            db.Columns.Add("COUNT_LIKE", typeof(int));
+            for (int i = 0; i < db.Rows.Count; i++)
+            {
+                db.Rows[i]["COUNT_LIKE"] = LikerModel.Instance.countLikes(int.Parse(db.Rows[i]["ID"].ToString()));
+            }
+            rpt.DataSource = db;
+            rpt.DataBind();
         }
     }
 }
