@@ -9,6 +9,13 @@ namespace TumblrClone.MODELS
 {
     public class UserModel
     {
+        private static UserModel instance;
+        public static UserModel Instance
+        {
+            get { if (instance == null) instance = new UserModel(); return UserModel.instance; }
+            private set { UserModel.instance = value; }
+        }
+
         public DataTable GetUser(string username, string password)
         {
             string query = "select * from USERS where USERNAME = @username and PASSWORD = @password";
