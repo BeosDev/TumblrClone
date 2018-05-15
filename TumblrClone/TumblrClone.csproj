@@ -132,8 +132,18 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CONTROLLERS\UserController.cs" />
+    <Compile Include="CONTROLLERS\CommentManagermentController.cs" />
+    <Compile Include="CONTROLLERS\GalleryController.cs" />
+    <Compile Include="CONTROLLERS\IndexController.cs" />
+    <Compile Include="CONTROLLERS\LoginController.cs" />
+    <Compile Include="CONTROLLERS\PageDetailController.cs" />
+    <Compile Include="CONTROLLERS\PostManagermentController.cs" />
+    <Compile Include="CONTROLLERS\RegisterController.cs" />
+    <Compile Include="CONTROLLERS\UploadController.cs" />
+    <Compile Include="CONTROLLERS\UserManagementController.cs" />
     <Compile Include="MODELS\DataProvider.cs" />
+    <Compile Include="MODELS\LikeModel.cs" />
+    <Compile Include="MODELS\PostModel.cs" />
     <Compile Include="MODELS\UserModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VIEWS\Index.aspx.cs">

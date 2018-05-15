@@ -198,7 +198,7 @@
                  <div class="grid-item card rounded border">
                         <a href="./post-detail.html">
                             <figure>
-                                <img class="card-img-top" src="" alt="Trolltunga, Norway"/>
+                                <img class="card-img-top" src="../IMAGES/POST_IMAGES/<%# Eval("IMAGE_URL") %>" alt="Trolltunga, Norway"/>
                             </figure>
                         </a>
                         <div class="card-body">
