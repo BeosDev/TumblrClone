@@ -101,6 +101,7 @@
     <Content Include="Assets\css\bootstrap.min.css" />
     <Content Include="Assets\css\ionicons.min.css" />
     <Content Include="Assets\js\bootstrap.min.js" />
+    <Content Include="Assets\js\imagesloaded.pkgd.min.js" />
     <Content Include="Assets\js\jquery.lazy.min.js" />
     <Content Include="Assets\js\jquery.lazy.picture.min.js" />
     <Content Include="Assets\js\jquery.min.js" />
@@ -112,6 +113,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Service References\Application Insights\ConnectedService.json" />
+    <Content Include="App_Data\TumblrClone.mdf" />
+    <Content Include="App_Data\TumblrClone_log.ldf">
+      <DependentUpon>TumblrClone.mdf</DependentUpon>
+    </Content>
     <Content Include="VIEWS\Index.aspx" />
     <Content Include="VIEWS\Navbar.Master" />
     <None Include="Web.Debug.config">
@@ -122,10 +127,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\TumblrClone.mdf" />
-    <Content Include="App_Data\TumblrClone_log.ldf">
-      <DependentUpon>TumblrClone.mdf</DependentUpon>
-    </Content>
     <Content Include="VIEWS\Login.aspx" />
     <Content Include="VIEWS\Upload.aspx" />
     <Content Include="Web.config" />

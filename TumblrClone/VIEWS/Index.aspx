@@ -330,7 +330,7 @@
     <script type="text/javascript" src="../Assets/js/jquery.lazy.min.js"></script>
     <script type="text/javascript" src="../Assets/js/jquery.lazy.picture.min.js"></script>
     <script type="text/javascript" src="../Assets/js/masonry.pkgd.min.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="../Assets/js/imagesloaded.pkgd.min.js"></script>
     <script>
         var $grid = $('.grid').imagesLoaded(function () {
             $grid.masonry({
