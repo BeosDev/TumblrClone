@@ -12,6 +12,7 @@ namespace TumblrClone.VIEWS
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            IndexController.Instance.loadPost(ref RptPost);
         }
     }
 }
