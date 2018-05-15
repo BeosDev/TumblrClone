@@ -9,12 +9,11 @@ namespace TumblrClone.MODELS
 {
     public class UserModel
     {
-        DataProvider dataProvider = new DataProvider();
         public DataTable GetUser(string username, string password)
         {
             string query = "select * from USERS where USERNAME = @username and PASSWORD = @password";
             string []para = { username, password };
-            DataTable dt = dataProvider.ExecuteQuery(query,para);
+            DataTable dt = DataProvider.Instance.ExecuteQuery(query,para);
             return dt;
         }
     }

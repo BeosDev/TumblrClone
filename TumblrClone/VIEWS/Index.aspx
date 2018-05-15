@@ -193,138 +193,23 @@
         <!--CONTENT-->
     <div class="grid">
         <div class="grid-sizer"></div>
-        <div class="grid-item card rounded border">
-            <a href="./post-detail.html">
-                <figure>
-                    <img class="card-img-top" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" alt="Trolltunga, Norway"
-                    />
-                </figure>
-            </a>
-            <div class="card-body">
-                <span style="float: right; font-size: 0.9em">540</span>
-                <a href="/like">
-                    <i style="float: right; margin-top: 4px; margin-right: 1px; color:red;" class="fa fa-heart-o" style="font-size:24px"></i>
-                </a>
-            </div>
-        </div>
-        <div class="grid-item card rounded border lazy">
-            <a href="./post-detail.html">
-                <figure>
-                    <img class="card-img-top" src="https://media0.giphy.com/media/26FLb8rHh0T5B576E/giphy.gif" />
-                </figure>
-            </a>
-            <div class="card-body">
-                <span class="glyphicon glyphicon-heart"></span>
-            </div>
-        </div>
-        <div class="grid-item">
-            <img class="lazy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" />
-        </div>
-        <div class="grid-item">
-            <img class="lazy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" />
-        </div>
-        <div class="grid-item">
-            <img class="lazy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" />
-        </div>
-        <div class="grid-item">
-            <img class="lazy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" />
-        </div>
-        <div class="grid-item">
-            <img class="lazy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" />
-        </div>
-        <div class="grid-item">
-            <img class="lazy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" />
-        </div>
-        <div class="grid-item">
-            <img class="lazy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" />
-        </div>
-        <div class="grid-item">
-            <img class="lazy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" />
-        </div>
-        <div class="grid-item">
-            <img class="lazy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" />
-        </div>
-        <div class="grid-item">
-            <img class="lazy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" />
-        </div>
-        <div class="grid-item">
-            <img class="lazy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" />
-        </div>
-        <div class="grid-item">
-            <img class="lazy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" />
-        </div>
-        <div class="grid-item">
-            <img class="lazy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" />
-        </div>
-        <div class="grid-item">
-            <img class="lazy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" />
-        </div>
-        <div class="grid-item">
-            <img class="lazy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" />
-        </div>
-        <div class="grid-item">
-            <img class="lazy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" />
-        </div>
-        <div class="grid-item">
-            <img class="lazy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" />
-        </div>
-        <div class="grid-item">
-            <img class="lazy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" />
-        </div>
-        <div class="grid-item">
-            <img class="lazy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" />
-        </div>
-        <div class="grid-item">
-            <img class="lazy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" />
-        </div>
-        <div class="grid-item">
-            <img class="lazy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" />
-        </div>
-        <div class="grid-item">
-            <img class="lazy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" />
-        </div>
-        <div class="grid-item">
-            <img class="lazy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" />
-        </div>
-        <div class="grid-item">
-            <img class="lazy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" />
-        </div>
-        <div class="grid-item">
-            <img class="lazy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" />
-        </div>
-        <div class="grid-item">
-            <img class="lazy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" />
-        </div>
-        <div class="grid-item">
-            <img class="lazy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" />
-        </div>
-        <div class="grid-item">
-            <img class="lazy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" />
-        </div>
-        <div class="grid-item">
-            <img class="lazy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" />
-        </div>
-        <div class="grid-item">
-            <img class="lazy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" />
-        </div>
-        <div class="grid-item">
-            <img class="lazy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" />
-        </div>
-        <div class="grid-item">
-            <img class="lazy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" />
-        </div>
-        <div class="grid-item">
-            <img class="lazy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" />
-        </div>
-        <div class="grid-item">
-            <img class="lazy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" />
-        </div>
-        <div class="grid-item">
-            <img class="lazy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" />
-        </div>
-        <div class="grid-item">
-            <img class="lazy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" />
-        </div>
+        <asp:Repeater ID="RptPost" runat="server">
+            <ItemTemplate>
+                 <div class="grid-item card rounded border">
+                        <a href="./post-detail.html">
+                            <figure>
+                                <img class="card-img-top" src="" alt="Trolltunga, Norway"/>
+                            </figure>
+                        </a>
+                        <div class="card-body">
+                            <span style="float: right; font-size: 0.9em">540</span>
+                            <a href="/like">
+                                <i style="float: right; margin-top: 4px; margin-right: 1px; color:red;" class="fa fa-heart-o" style="font-size:24px"></i>
+                            </a>
+                        </div>
+                  </div>
+            </ItemTemplate>
+        </asp:Repeater>
     </div>
 
     <script type="text/javascript" src="../Assets/js/jquery.lazy.min.js"></script>

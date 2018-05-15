@@ -9,7 +9,7 @@ using TumblrClone.MODELS;
 
 namespace TumblrClone.CONTROLLERS
 {
-    public class UserController
+    public class LoginController
     {
         UserModel userModel = new UserModel();
         internal void Login(string username, string password, HttpResponse response, HttpSessionState session)

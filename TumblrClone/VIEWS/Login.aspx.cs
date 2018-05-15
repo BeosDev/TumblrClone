@@ -11,7 +11,7 @@ namespace TumblrClone.VIEWS
     public partial class Login : System.Web.UI.Page
     {
         string loai_tk;
-        UserController userController = new UserController();
+        LoginController userController = new LoginController();
         protected void Page_Load(object sender, EventArgs e)
         {
 
