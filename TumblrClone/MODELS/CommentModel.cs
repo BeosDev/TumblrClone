@@ -20,5 +20,11 @@ namespace TumblrClone.MODELS
         {
             return DataProvider.Instance.ExecuteQuery("SELECT * FROM COMMENT WHERE PID = @PID ", new object[] {id});
         }
+
+        public int addComment(int uid, int pid, string content)
+        {
+            return DataProvider.Instance.ExecuteNonQuery("INSERT INTO COMMENT VALUES( @UID , @PID , @CONTENT )",
+                new object[] {uid, pid, content});
+        }
     }
 }

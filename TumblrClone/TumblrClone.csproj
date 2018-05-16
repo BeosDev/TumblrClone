@@ -108,6 +108,7 @@
     <Content Include="Assets\js\lazyload.min.js" />
     <Content Include="Assets\js\masonry.pkgd.min.js" />
     <Content Include="Assets\js\popper.min.js" />
+    <Content Include="MyGallery.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -147,6 +148,13 @@
     <Compile Include="MODELS\LikerModel.cs" />
     <Compile Include="MODELS\PostModel.cs" />
     <Compile Include="MODELS\UserModel.cs" />
+    <Compile Include="MyGallery.aspx.cs">
+      <DependentUpon>MyGallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyGallery.aspx.designer.cs">
+      <DependentUpon>MyGallery.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>

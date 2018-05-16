@@ -18,5 +18,10 @@ namespace TumblrClone.VIEWS
                 PageDetailController.Instance.getPageDetail(ref myImg,ref rptCmt, id);
             }
         }
+
+        protected void btnSubmit_Click(object sender, EventArgs e)
+        {
+            PageDetailController.Instance.addComment(Request,Response,int.Parse(Request.QueryString["id"].ToString()),1,tbComment.Text);
+        }
     }
 }

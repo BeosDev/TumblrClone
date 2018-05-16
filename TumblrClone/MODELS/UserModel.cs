@@ -18,7 +18,7 @@ namespace TumblrClone.MODELS
 
         public DataTable GetUser(string username, string password)
         {
-            string query = "select * from USERS where USERNAME = @username and PASSWORD = @password";
+            string query = "select * from [USER] where USERNAME = @username and PASSWORD = @password ";
             string []para = { username, password };
             DataTable dt = DataProvider.Instance.ExecuteQuery(query,para);
             return dt;

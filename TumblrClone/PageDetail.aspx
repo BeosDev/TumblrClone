@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Navbar.Master" AutoEventWireup="true" CodeBehind="PageDetail.aspx.cs" Inherits="TumblrClone.VIEWS.PageDetail" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-<style>
+    <style>
     * { box-sizing: border-box; }
 
     /* force scrollbar */
@@ -189,8 +189,8 @@
                     <div class="row">
                         <div class="col-md-12" style="margin-bottom: 20px;">
                             <div class="status-post">
-                                <textarea style="margin-bottom: 20px;" placeholder="Whats on your mind?" class="form-control" id="" rows="3"></textarea>
-                                <button class="btn btn-default pull-right">Post</button>
+                                <asp:TextBox CssClass="form-control" ID="tbComment" TextMode="MultiLine" runat="server"></asp:TextBox>
+                                <asp:Button CssClass="btn btn-default pull-right" ID="btnSubmit" runat="server" Text="Comment" OnClick="btnSubmit_Click" />
                             </div>
                         </div>
                     </div>
