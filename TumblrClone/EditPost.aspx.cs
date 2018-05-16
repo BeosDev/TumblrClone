@@ -20,10 +20,15 @@ namespace TumblrClone
                     int id = int.Parse(Request.QueryString["id"].ToString());
                     DataTable table = EditPostController.Instance.getDataWithId(id);
                     txb_title.Text = table.Rows[0]["TITLE"].ToString();
-                    //txb_uid.Text = table.Columns[1].ToString();
-                    //fu_image.
+                    txb_uid.Text = table.Rows[0]["UID"].ToString();
+                    txb_description.Text = table.Rows[0]["DESCRIPTION"].ToString();
                 }
             }
+        }
+
+        protected void btn_edit_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

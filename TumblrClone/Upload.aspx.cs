@@ -24,7 +24,7 @@ namespace TumblrClone
 
         protected void btn_upload_Click(object sender, EventArgs e)
         {
-  
+
             FileInfo f = new FileInfo(fu_image.FileName);
             string fileName = GetTimestamp(DateTime.Now) + f.Extension;
 

@@ -9,7 +9,7 @@ namespace TumblrClone.CONTROLLERS
     public class PostManagementController
     {
         PostModel postModel = new PostModel();
-        internal void Delete(string id,HttpResponse response)
+        internal void Delete(string id, HttpResponse response)
         {
             int check = postModel.delete(id);
             if (check != 0)
