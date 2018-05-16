@@ -29,5 +29,18 @@ namespace TumblrClone.CONTROLLERS
             rpt.DataSource = db;
             rpt.DataBind();
         }
+
+        internal void actionLike(ref Repeater rpt, int uid,int pid)
+        {
+            if (LikerModel.Instance.isExistLike(uid,pid) > 0)
+            {
+                LikerModel.Instance.removeLike(uid,pid);
+            }
+            else
+            {
+                LikerModel.Instance.addLike(uid, pid);
+            }
+            loadPost(ref rpt);
+        }
     }
 }

@@ -192,6 +192,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <!--CONTENT-->
     <div class="grid">
+        <asp:Label ID="lbTest" runat="server" Text="Label"></asp:Label>
         <div class="grid-sizer"></div>
         <asp:Repeater ID="RptPost" runat="server">
             <ItemTemplate>
@@ -203,9 +204,9 @@
                         </a>
                         <div class="card-body">
                             <span style="float: right; font-size: 0.9em"><%# Eval("COUNT_LIKE") %></span>
-                            <a href="/like">
+                            <asp:LinkButton ID="LinkButton1" runat="server" CommandName='<%# Eval("ID") %>' OnClick="btnLike_Click">
                                 <i style="float: right; margin-top: 4px; margin-right: 1px; color:red;" class="fa fa-heart-o" style="font-size:24px"></i>
-                            </a>
+                            </asp:LinkButton>
                         </div>
                   </div>
             </ItemTemplate>
