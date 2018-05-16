@@ -6,13 +6,13 @@ using TumblrClone.MODELS;
 
 namespace TumblrClone.CONTROLLERS
 {
-    public class UploadController
+    public class PostManagementController
     {
         PostModel postModel = new PostModel();
-        internal void Upload(string title, int uid, string image_url, string description, HttpResponse response)
+        internal void Delete(string id,HttpResponse response)
         {
-            int check = postModel.upload(title, uid, image_url, description);
-            if(check != 0)
+            int check = postModel.delete(id);
+            if (check != 0)
             {
                 response.Write("<script>alert('Upload Successful!')</script>");
             }

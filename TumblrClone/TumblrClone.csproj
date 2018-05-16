@@ -112,13 +112,14 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="PostManagement.aspx" />
     <Content Include="Service References\Application Insights\ConnectedService.json" />
     <Content Include="App_Data\TumblrClone.mdf" />
     <Content Include="App_Data\TumblrClone_log.ldf">
       <DependentUpon>TumblrClone.mdf</DependentUpon>
     </Content>
-    <Content Include="VIEWS\Index.aspx" />
-    <Content Include="VIEWS\Navbar.Master" />
+    <Content Include="Index.aspx" />
+    <Content Include="Navbar.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -127,41 +128,67 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="VIEWS\Login.aspx" />
-    <Content Include="VIEWS\Upload.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Upload.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CONTROLLERS\UserController.cs" />
+    <Compile Include="CONTROLLERS\CommentManagermentController.cs" />
+    <Compile Include="CONTROLLERS\GalleryController.cs" />
+    <Compile Include="CONTROLLERS\IndexController.cs" />
+    <Compile Include="CONTROLLERS\LoginController.cs" />
+    <Compile Include="CONTROLLERS\PageDetailController.cs" />
+    <Compile Include="CONTROLLERS\PostManagementController.cs" />
+    <Compile Include="CONTROLLERS\RegisterController.cs" />
+    <Compile Include="CONTROLLERS\UploadController.cs" />
+    <Compile Include="CONTROLLERS\UserManagementController.cs" />
     <Compile Include="MODELS\DataProvider.cs" />
+    <Compile Include="MODELS\LikeModel.cs" />
+    <Compile Include="MODELS\PostModel.cs" />
     <Compile Include="MODELS\UserModel.cs" />
+    <Compile Include="PostManagement.aspx.cs">
+      <DependentUpon>PostManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PostManagement.aspx.designer.cs">
+      <DependentUpon>PostManagement.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="VIEWS\Index.aspx.cs">
+    <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="VIEWS\Index.aspx.designer.cs">
+    <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="VIEWS\Login.aspx.cs">
+    <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="VIEWS\Login.aspx.designer.cs">
+    <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="VIEWS\Navbar.Master.cs">
+    <Compile Include="Navbar.Master.cs">
       <DependentUpon>Navbar.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="VIEWS\Navbar.Master.designer.cs">
+    <Compile Include="Navbar.Master.designer.cs">
       <DependentUpon>Navbar.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Upload.aspx.cs">
+      <DependentUpon>Upload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Upload.aspx.designer.cs">
+      <DependentUpon>Upload.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="VIEWS\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
