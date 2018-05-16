@@ -16,9 +16,36 @@ namespace TumblrClone.MODELS
             private set { UserModel.instance = value; }
         }
 
+        internal void DeleteUser(string id)
+        {
+            string query = "delete from [USER] where id = @id";
+            string[] par = { id };
+            DataProvider.Instance.ExecuteNonQuery(query, par);
+        }
+
+        internal void EditUser(string id, string username, string password, string fullname, string selectedValue)
+        {
+            string query = "Update [USER] set USERNAME = @username , PASSWORD = @password , HO_TEN = @hoten , LOAI_TK = @loaitk where ID = @id";
+            string[] par = { username, password, fullname, selectedValue, id };
+            DataProvider.Instance.ExecuteNonQuery(query, par);
+        }
+
+        internal DataTable GetUsers()
+        {
+            string query = "select * from [USER]";
+            return DataProvider.Instance.ExecuteQuery(query);
+        }
+
+        internal void AddUser(string username, string password, string fullname, string selectedValue)
+        {
+            string query = "insert [USER](USERNAME, PASSWORD, HO_TEN, LOAI_TK) values( @username , @password , @fullname , @loaitk )";
+            string[] par = { username, password, fullname, selectedValue };
+            DataProvider.Instance.ExecuteNonQuery(query, par);
+        }
+
         public DataTable GetUser(string username, string password)
         {
-            string query = "select * from USERS where USERNAME = @username and PASSWORD = @password";
+            string query = "select * from [USER] where USERNAME = @username and PASSWORD = @password";
             string []para = { username, password };
             DataTable dt = DataProvider.Instance.ExecuteQuery(query,para);
             return dt;

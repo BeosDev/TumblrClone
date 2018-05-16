@@ -130,6 +130,7 @@
     <Content Include="Login.aspx" />
     <Content Include="PageDetail.aspx" />
     <Content Include="Upload.aspx" />
+    <Content Include="UserManagement.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -175,6 +176,13 @@
     </Compile>
     <Compile Include="PageDetail.aspx.designer.cs">
       <DependentUpon>PageDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagement.aspx.cs">
+      <DependentUpon>UserManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserManagement.aspx.designer.cs">
+      <DependentUpon>UserManagement.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
