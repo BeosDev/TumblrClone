@@ -27,13 +27,5 @@ namespace TumblrClone.CONTROLLERS
                     new object[] {id});
             rptCmt.DataBind();
         }
-
-        internal void addComment(HttpRequest request, HttpResponse response, int pid, int uid,string content)
-        {
-            if (CommentModel.Instance.addComment(uid, pid, content) > 0)
-            {
-                response.Redirect(request.RawUrl);
-            }
-        }
     }
 }

@@ -4,15 +4,16 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using TumblrClone.CONTROLLERS;
+using System.Data;
+using TumblrClone.MODELS.DAO;
 
-namespace TumblrClone.VIEWS
+namespace TumblrClone
 {
-    public partial class Index : System.Web.UI.Page
+    public partial class CommentManagement : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            IndexController.Instance.loadPost(ref RptPost);
+            DataProvider.Instance.ExecuteQuery("SELECT * FROM COMMENT");
         }
     }
 }

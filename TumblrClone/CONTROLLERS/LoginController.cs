@@ -15,13 +15,12 @@ namespace TumblrClone.CONTROLLERS
         internal void Login(string username, string password, HttpResponse response, HttpSessionState session)
         {
             DataTable user = userModel.GetUser(username, password);
-            if (user.Rows.Count > 0)
+            if (user.Rows.Count == 0)
             {
-                session["username"] = user.Rows[0]["USERNAME"];
+                session["username"] = user.Rows[0]["USERNAME"]; 
                 session["loai_tk"] = user.Rows[0]["LOAI_TK"];
-                response.Write("<script>alert("+ user.Rows[0]["LOAI_TK"] + ")</script>");
-                if (user.Rows[0]["LOAI_TK"].ToString().Equals("0"))
-                    response.Redirect("UserManagement.aspx");
+                if (user.Rows[0]["LOAI_TK"].ToString().Equals("Admin"))
+                    response.Redirect("Admin.aspx");
                 else
                     response.Redirect("Index.aspx");
             }

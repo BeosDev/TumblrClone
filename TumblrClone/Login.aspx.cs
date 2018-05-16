@@ -15,13 +15,14 @@ namespace TumblrClone.VIEWS
         protected void Page_Load(object sender, EventArgs e)
         {
 
+
             if (Session["username"] != null)
             {
                 if (Session["loai_tk"] != null)
                 {
                     loai_tk = Session["loai_tk"].ToString();
-                    if (loai_tk.ToString().Equals("0"))
-                        Response.Redirect("UserManagement.aspx");
+                    if (loai_tk.Equals("Admin"))
+                        Response.Redirect("Admin.aspx");
                     else
                         Response.Redirect("Index.aspx");
                 }
@@ -32,7 +33,7 @@ namespace TumblrClone.VIEWS
         {
             string username = txtUsername.Text;
             string password = txtPassword.Text;
-            userController.Login(username, password, Response,Session);
+            userController.Login(username, password, Response, Session);
         }
     }
 }

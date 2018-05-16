@@ -108,11 +108,12 @@
     <Content Include="Assets\js\lazyload.min.js" />
     <Content Include="Assets\js\masonry.pkgd.min.js" />
     <Content Include="Assets\js\popper.min.js" />
-    <Content Include="MyGallery.aspx" />
+    <Content Include="CommentManagement.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Register.aspx" />
     <Content Include="Service References\Application Insights\ConnectedService.json" />
     <Content Include="App_Data\TumblrClone.mdf" />
     <Content Include="App_Data\TumblrClone_log.ldf">
@@ -131,10 +132,16 @@
     <Content Include="Login.aspx" />
     <Content Include="PageDetail.aspx" />
     <Content Include="Upload.aspx" />
-    <Content Include="UserManagement.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommentManagement.aspx.cs">
+      <DependentUpon>CommentManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommentManagement.aspx.designer.cs">
+      <DependentUpon>CommentManagement.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CONTROLLERS\CommentManagermentController.cs" />
     <Compile Include="CONTROLLERS\GalleryController.cs" />
     <Compile Include="CONTROLLERS\IndexController.cs" />
@@ -149,13 +156,6 @@
     <Compile Include="MODELS\LikerModel.cs" />
     <Compile Include="MODELS\PostModel.cs" />
     <Compile Include="MODELS\UserModel.cs" />
-    <Compile Include="MyGallery.aspx.cs">
-      <DependentUpon>MyGallery.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="MyGallery.aspx.designer.cs">
-      <DependentUpon>MyGallery.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
@@ -185,20 +185,18 @@
     <Compile Include="PageDetail.aspx.designer.cs">
       <DependentUpon>PageDetail.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UserManagement.aspx.cs">
-      <DependentUpon>UserManagement.aspx</DependentUpon>
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UserManagement.aspx.designer.cs">
-      <DependentUpon>UserManagement.aspx</DependentUpon>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Admin\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

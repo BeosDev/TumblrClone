@@ -11,7 +11,7 @@ namespace TumblrClone.MODELS.DAO
     {
         // Tạo kết nối với sql
         //private String connectionSTR = System.Configuration.ConfigurationManager.ConnectionStrings["TumblrClone"].ConnectionString;
-        private String connectionSTR = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=G:\Study\ASP\TumblrClone\TumblrClone\App_Data\TumblrClone.mdf;Integrated Security=True";
+        private String connectionSTR = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\N.Vinh\Desktop\TumblrClone\TumblrClone\App_Data\TumblrClone.mdf;Integrated Security=True";
         // Hạn chế việc tạo AccountDao nhiều lần phát sinh các connection để chỉ tạo duy nhất 1 lần
         private static DataProvider instance;
         public static DataProvider Instance
