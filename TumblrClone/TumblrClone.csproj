@@ -98,6 +98,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\TumblrClone.mdf" />
+    <Content Include="App_Data\TumblrClone_log.ldf">
+      <DependentUpon>TumblrClone.mdf</DependentUpon>
+    </Content>
     <Content Include="Assets\css\bootstrap.min.css" />
     <Content Include="Assets\css\ionicons.min.css" />
     <Content Include="Assets\js\bootstrap.min.js" />
@@ -115,10 +119,6 @@
     </Content>
     <Content Include="Register.aspx" />
     <Content Include="Service References\Application Insights\ConnectedService.json" />
-    <Content Include="App_Data\TumblrClone.mdf" />
-    <Content Include="App_Data\TumblrClone_log.ldf">
-      <DependentUpon>TumblrClone.mdf</DependentUpon>
-    </Content>
     <Content Include="Index.aspx" />
     <Content Include="Navbar.Master" />
     <None Include="Web.Debug.config">
