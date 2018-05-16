@@ -140,7 +140,6 @@
     <Compile Include="CONTROLLERS\IndexController.cs" />
     <Compile Include="CONTROLLERS\LoginController.cs" />
     <Compile Include="CONTROLLERS\PageDetailController.cs" />
-    <Compile Include="CONTROLLERS\PostManagermentController.cs" />
     <Compile Include="CONTROLLERS\RegisterController.cs" />
     <Compile Include="CONTROLLERS\UploadController.cs" />
     <Compile Include="CONTROLLERS\UserManagementController.cs" />
