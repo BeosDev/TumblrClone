@@ -10,7 +10,7 @@
             <asp:BoundField DataField="DESCRIPTION" HeaderText="DESCRIPTION" />
             <asp:TemplateField HeaderText="EDIT">
                 <ItemTemplate>
-                    <asp:Button ID="btn_edit" runat="server" CommandName='<%#Eval("Id") %>' OnClick="Edit.aspx" Text="EDIT" />
+                    <a href="/EditPost.aspx?id=<%# Eval("Id") %>">Edit</a>
                 </ItemTemplate>
             </asp:TemplateField>
             <asp:TemplateField HeaderText="DELETE">

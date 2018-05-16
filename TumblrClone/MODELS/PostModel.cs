@@ -21,6 +21,11 @@ namespace TumblrClone.MODELS
             return DataProvider.Instance.ExecuteQuery("SELECT * FROM POST");
         }
 
+        public DataTable getPosts(int id)
+        {
+            return DataProvider.Instance.ExecuteQuery("SELECT TITLE, UID, IMAGE_URL, DESCRIPTION FROM POST where Id='" + id + "'");
+        }
+
         public int upload(string title, int uid, string image_url, string description)
         {
             string query = "insert into POST(TITLE, UID, IMAGE_URL, DESCRIPTION) values (N'" + title + "', '" + uid + "', '" + image_url + "', '" + description + "')";

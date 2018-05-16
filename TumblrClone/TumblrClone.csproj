@@ -108,6 +108,7 @@
     <Content Include="Assets\js\lazyload.min.js" />
     <Content Include="Assets\js\masonry.pkgd.min.js" />
     <Content Include="Assets\js\popper.min.js" />
+    <Content Include="EditPost.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -135,6 +136,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CONTROLLERS\CommentManagermentController.cs" />
+    <Compile Include="CONTROLLERS\EditPostController.cs" />
     <Compile Include="CONTROLLERS\GalleryController.cs" />
     <Compile Include="CONTROLLERS\IndexController.cs" />
     <Compile Include="CONTROLLERS\LoginController.cs" />
@@ -143,6 +145,13 @@
     <Compile Include="CONTROLLERS\RegisterController.cs" />
     <Compile Include="CONTROLLERS\UploadController.cs" />
     <Compile Include="CONTROLLERS\UserManagementController.cs" />
+    <Compile Include="EditPost.aspx.cs">
+      <DependentUpon>EditPost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditPost.aspx.designer.cs">
+      <DependentUpon>EditPost.aspx</DependentUpon>
+    </Compile>
     <Compile Include="MODELS\CommentModel.cs" />
     <Compile Include="MODELS\DataProvider.cs" />
     <Compile Include="MODELS\LikerModel.cs" />
