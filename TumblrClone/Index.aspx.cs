@@ -14,5 +14,11 @@ namespace TumblrClone.VIEWS
         {
             IndexController.Instance.loadPost(ref RptPost);
         }
+        protected void btnLike_Click(object sender, EventArgs e)
+        {
+            LinkButton btn = (LinkButton)sender;
+            lbTest.Text = btn.CommandName;
+            IndexController.Instance.actionLike(ref RptPost,1,int.Parse(btn.CommandName));
+        }
     }
 }
