@@ -1,9 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Navbar.Master" AutoEventWireup="true" CodeBehind="Upload.aspx.cs" Inherits="TumblrClone.Upload" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Navbar.Master" AutoEventWireup="true" CodeBehind="EditPost.aspx.cs" Inherits="TumblrClone.EditPost" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div>
-        <h2>UPLOAD</h2>
+        <h2>EDIT</h2>
         Title :<asp:TextBox ID="txb_title" runat="server"></asp:TextBox>
         <br />
         UID :<asp:TextBox ID="txb_uid" runat="server"></asp:TextBox>
@@ -12,8 +12,8 @@
         <br />
         Description :<asp:TextBox ID="txb_description" runat="server" Height="84px" TextMode="MultiLine" Width="285px"></asp:TextBox>
         <br />
-        <asp:Button ID="btn_upload" runat="server" OnClick="btn_upload_Click" Text="Upload" />
+        <asp:Button ID="btn_edit" runat="server" OnClick="btn_edit_Click" Text="Edit" />
+        <asp:Button ID="btn_cancel" runat="server" Text="Cancel" />
         <br />
-    
     </div>
 </asp:Content>

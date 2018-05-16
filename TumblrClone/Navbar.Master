@@ -5,11 +5,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Tumblr Clone</title>
-    <link rel="stylesheet" href="../Assets/css//ionicons.min.css">
-    <link rel="stylesheet" href="../Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Assets/css/ionicons.min.css">
+    <link rel="stylesheet" href="./Assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script type="text/javascript" src="../Assets/js/jquery.min.js"></script>
-    <script type="text/javascript" src="../Assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./Assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./Assets/js/bootstrap.min.js"></script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>

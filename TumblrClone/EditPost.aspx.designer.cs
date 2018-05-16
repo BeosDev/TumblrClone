@@ -10,7 +10,7 @@
 namespace TumblrClone {
     
     
-    public partial class Upload {
+    public partial class EditPost {
         
         /// <summary>
         /// txb_title control.
@@ -49,12 +49,21 @@ namespace TumblrClone {
         protected global::System.Web.UI.WebControls.TextBox txb_description;
         
         /// <summary>
-        /// btn_upload control.
+        /// btn_edit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_upload;
+        protected global::System.Web.UI.WebControls.Button btn_edit;
+        
+        /// <summary>
+        /// btn_cancel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_cancel;
     }
 }
