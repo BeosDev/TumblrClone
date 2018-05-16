@@ -139,7 +139,7 @@
     <Compile Include="CONTROLLERS\IndexController.cs" />
     <Compile Include="CONTROLLERS\LoginController.cs" />
     <Compile Include="CONTROLLERS\PageDetailController.cs" />
-    <Compile Include="CONTROLLERS\PostManagermentController.cs" />
+    <Compile Include="CONTROLLERS\PostManagementController.cs" />
     <Compile Include="CONTROLLERS\RegisterController.cs" />
     <Compile Include="CONTROLLERS\UploadController.cs" />
     <Compile Include="CONTROLLERS\UserManagementController.cs" />
@@ -183,6 +183,7 @@
     </Compile>
     <Compile Include="Upload.aspx.designer.cs">
       <DependentUpon>Upload.aspx</DependentUpon>
+    </Compile>
     <Compile Include="PageDetail.aspx.cs">
       <DependentUpon>PageDetail.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
