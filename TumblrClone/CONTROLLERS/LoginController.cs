@@ -17,6 +17,7 @@ namespace TumblrClone.CONTROLLERS
             DataTable user = userModel.GetUser(username, password);
             if (user.Rows.Count > 0)
             {
+                session["userid"] = user.Rows[0]["ID"];
                 session["username"] = user.Rows[0]["USERNAME"];
                 session["loai_tk"] = user.Rows[0]["LOAI_TK"];
                 response.Write("<script>alert("+ user.Rows[0]["LOAI_TK"] + ")</script>");

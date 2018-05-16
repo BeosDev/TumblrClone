@@ -24,6 +24,7 @@
             </div>
             <asp:Button ID="btnLogin" runat="server" Text="Login" CssClass="btn btn-primary" OnClick="btnLogin_Click" />
         </form>
+        <label>Do not have a account? <a href="Register.aspx">Register now!</a></label>
     </div>
 </body>
 </html>

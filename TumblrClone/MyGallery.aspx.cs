@@ -14,7 +14,8 @@ namespace TumblrClone
         {
             if (!IsPostBack)
             {
-                GalleryController.Instance.getGallery(ref RptGallery, 1);
+                if(Session["userid"] != null)
+                GalleryController.Instance.getGallery(ref RptGallery, int.Parse(Session["userid"].ToString()));
             }
         }
 

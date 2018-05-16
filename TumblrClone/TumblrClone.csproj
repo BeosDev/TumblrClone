@@ -108,13 +108,17 @@
     <Content Include="Assets\js\lazyload.min.js" />
     <Content Include="Assets\js\masonry.pkgd.min.js" />
     <Content Include="Assets\js\popper.min.js" />
+    <Content Include="ChangePassword.aspx" />
+    <Content Include="Default.aspx" />
     <Content Include="EditPost.aspx" />
+    <Content Include="Logout.aspx" />
     <Content Include="MyGallery.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="PostManagement.aspx" />
+    <Content Include="Register.aspx" />
     <Content Include="Service References\Application Insights\ConnectedService.json" />
     <Content Include="App_Data\TumblrClone.mdf" />
     <Content Include="App_Data\TumblrClone_log.ldf">
@@ -137,6 +141,14 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROLLERS\ChangePasswordController.cs" />
     <Compile Include="CONTROLLERS\CommentManagermentController.cs" />
     <Compile Include="CONTROLLERS\EditPostController.cs" />
     <Compile Include="CONTROLLERS\GalleryController.cs" />
@@ -147,12 +159,26 @@
     <Compile Include="CONTROLLERS\RegisterController.cs" />
     <Compile Include="CONTROLLERS\UploadController.cs" />
     <Compile Include="CONTROLLERS\UserManagementController.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="EditPost.aspx.cs">
       <DependentUpon>EditPost.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="EditPost.aspx.designer.cs">
       <DependentUpon>EditPost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
     </Compile>
     <Compile Include="MODELS\CommentModel.cs" />
     <Compile Include="MODELS\DataProvider.cs" />
@@ -201,6 +227,13 @@
     </Compile>
     <Compile Include="PageDetail.aspx.designer.cs">
       <DependentUpon>PageDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
     <Compile Include="Upload.aspx.cs">
       <DependentUpon>Upload.aspx</DependentUpon>

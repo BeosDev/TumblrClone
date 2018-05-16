@@ -25,10 +25,21 @@ namespace TumblrClone
                 }
             }
         }
+        public String GetTimestamp(DateTime value)
+        {
+            return value.ToString("yyyyMMddHHmmssfff");
+        }
 
         protected void btn_edit_Click(object sender, EventArgs e)
         {
+            if (Request.QueryString["id"] != null) {
+                System.IO.FileInfo f = new System.IO.FileInfo(fu_image.FileName);
+                string fileName = GetTimestamp(DateTime.Now) + f.Extension;
 
+                fu_image.SaveAs(Server.MapPath("./IMAGES/") + fileName);
+                string url = Server.MapPath("./IMAGES/") + fileName;
+                EditPostController.Instance.EditPost(Request.QueryString["id"], txb_title.Text, txb_uid.Text, url, txb_description.Text);
+            }
         }
     }
 }

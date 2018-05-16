@@ -30,6 +30,13 @@ namespace TumblrClone.MODELS
             DataProvider.Instance.ExecuteNonQuery(query, par);
         }
 
+        internal void EditUser(string username, string newPassword)
+        {
+            string query = "update [USER] set PASSWORD = @newPassword where USERNAME = @username";
+            string[] par = { newPassword,username };
+            DataProvider.Instance.ExecuteNonQuery(query, par);
+        }
+
         internal DataTable GetUsers()
         {
             string query = "select * from [USER]";
@@ -48,6 +55,14 @@ namespace TumblrClone.MODELS
             string query = "select * from [USER] where USERNAME = @username and PASSWORD = @password";
             string []para = { username, password };
             DataTable dt = DataProvider.Instance.ExecuteQuery(query,para);
+            return dt;
+        }
+
+        public DataTable CheckUser(string username)
+        {
+            string query = "select * from [USER] where USERNAME = @username";
+            string[] para = { username };
+            DataTable dt = DataProvider.Instance.ExecuteQuery(query, para);
             return dt;
         }
     }

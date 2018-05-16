@@ -14,7 +14,7 @@ namespace TumblrClone
         UploadController postController = new UploadController();
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            txb_uid.Text = Session["userid"].ToString();
         }
 
         public String GetTimestamp(DateTime value)
@@ -29,14 +29,14 @@ namespace TumblrClone
             string fileName = GetTimestamp(DateTime.Now) + f.Extension;
 
             fu_image.SaveAs(Server.MapPath("./IMAGES/") + fileName);
-            string url = Server.MapPath("./IMAGES/") + fileName;
+            string url = fileName;
 
             string title = txb_title.Text;
             int uid = int.Parse(txb_uid.Text);
             string image_url = url;
             string description = txb_description.Text;
             postController.Upload(title, uid, image_url, description, Response);
-            Response.Redirect("Upload.aspx");
+            Response.Redirect("MyGallery.aspx");
         }
     }
 }

@@ -22,5 +22,10 @@ namespace TumblrClone.CONTROLLERS
         {
             return postModel.getPosts(id);
         }
+
+        internal void EditPost(string id, string title, string uid, string url, string desciprtion)
+        {
+            PostModel.Instance.EditPost(id, title, uid, url, desciprtion);
+        }
     }
 }

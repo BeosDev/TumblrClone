@@ -29,6 +29,12 @@ namespace TumblrClone.MODELS
             return DataProvider.Instance.ExecuteNonQuery("DELETE FROM POST WHERE ID = @PID ", new object[] {pid});
 
         }
+
+        internal void EditPost(string id, string title, string uid, string image_ulr, string desciprtion)
+        {
+            DataProvider.Instance.ExecuteNonQuery("update POST(TITLE, UID, IMAGE_URL, DESCRIPTION) set TITLE = @title , UID = @uid , IMAGE_ULR = @image_ulr , DESCRIPTION = @description where ID = @id", new object[] {title,uid,image_ulr,desciprtion,id});
+        }
+
         public DataTable getPostViaUID(int uid)
         {
             return DataProvider.Instance.ExecuteQuery("SELECT * FROM POST WHERE UID = @UID ",new object[] {uid});

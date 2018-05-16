@@ -21,7 +21,8 @@ namespace TumblrClone.VIEWS
 
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
-            PageDetailController.Instance.addComment(Request,Response,int.Parse(Request.QueryString["id"].ToString()),1,tbComment.Text);
+            if(Session["userid"]!= null)
+                PageDetailController.Instance.addComment(Request,Response,int.Parse(Request.QueryString["id"].ToString()), int.Parse(Session["userid"].ToString()), tbComment.Text);
         }
     }
 }
