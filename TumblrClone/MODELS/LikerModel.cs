@@ -19,14 +19,14 @@ namespace TumblrClone.MODELS
         {
             return DataProvider.Instance.ExecuteQuery("SELECT * FROM LIKER WHERE PID = @PID ", new object[] {id}).Rows.Count;
         }
-        public int isExistLike(int id)
+        public int isExistLike(int uid,int pid)
         {
-            return DataProvider.Instance.ExecuteQuery("SELECT * FROM LIKER WHERE UID = @UID ", new object[] { id }).Rows.Count;
+            return DataProvider.Instance.ExecuteQuery("SELECT * FROM LIKER WHERE UID = @UID AND PID = @PID ", new object[] { uid,pid }).Rows.Count;
         }
 
-        public int removeLike(int id)
+        public int removeLike(int uid,int pid)
         {
-            return DataProvider.Instance.ExecuteNonQuery("DELETE FROM LIKER WHERE UID = @UID ", new object[] {id});
+            return DataProvider.Instance.ExecuteNonQuery("DELETE FROM LIKER WHERE UID = @UID AND PID = @PID ", new object[] {uid,pid});
         }
 
         public int addLike(int uid,int pid)

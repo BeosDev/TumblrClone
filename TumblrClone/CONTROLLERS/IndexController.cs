@@ -32,9 +32,9 @@ namespace TumblrClone.CONTROLLERS
 
         internal void actionLike(ref Repeater rpt, int uid,int pid)
         {
-            if (LikerModel.Instance.isExistLike(uid) > 0)
+            if (LikerModel.Instance.isExistLike(uid,pid) > 0)
             {
-                LikerModel.Instance.removeLike(uid);
+                LikerModel.Instance.removeLike(uid,pid);
             }
             else
             {
