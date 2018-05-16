@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/VIEWS/Navbar.Master" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="TumblrClone.VIEWS.Index" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Navbar.Master" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="TumblrClone.VIEWS.Index" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
         @import url('https://fonts.googleapis.com/css?family=Roboto');
@@ -196,13 +196,13 @@
         <asp:Repeater ID="RptPost" runat="server">
             <ItemTemplate>
                  <div class="grid-item card rounded border">
-                        <a href="./post-detail.html">
+                        <a href="/PageDetail.aspx?id=<%# Eval("ID") %>">
                             <figure>
-                                <img class="card-img-top" src="" alt="Trolltunga, Norway"/>
+                                <img class="card-img-top" src="./IMAGES/<%# Eval("IMAGE_URL") %>" alt="Trolltunga, Norway"/>
                             </figure>
                         </a>
                         <div class="card-body">
-                            <span style="float: right; font-size: 0.9em">540</span>
+                            <span style="float: right; font-size: 0.9em"><%# Eval("COUNT_LIKE") %></span>
                             <a href="/like">
                                 <i style="float: right; margin-top: 4px; margin-right: 1px; color:red;" class="fa fa-heart-o" style="font-size:24px"></i>
                             </a>

@@ -31,6 +31,10 @@ namespace TumblrClone.MODELS
         {
             string query = "delete POST where Id = '"+id+"'";
             return DataProvider.Instance.ExecuteNonQuery(query);
+        public string getNameImg(int id)
+        {
+            return DataProvider.Instance.ExecuteScalar("SELECT IMAGE_URL FROM POST WHERE ID = @ID ",
+                new object[] {id}).ToString();
         }
     }
 }
