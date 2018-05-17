@@ -109,6 +109,7 @@
     <Content Include="Assets\js\masonry.pkgd.min.js" />
     <Content Include="Assets\js\popper.min.js" />
     <Content Include="ChangePassword.aspx" />
+    <Content Include="CommentManagement.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="EditPost.aspx" />
     <Content Include="Logout.aspx" />
@@ -147,6 +148,13 @@
     </Compile>
     <Compile Include="ChangePassword.aspx.designer.cs">
       <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommentManagement.aspx.cs">
+      <DependentUpon>CommentManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommentManagement.aspx.designer.cs">
+      <DependentUpon>CommentManagement.aspx</DependentUpon>
     </Compile>
     <Compile Include="CONTROLLERS\ChangePasswordController.cs" />
     <Compile Include="CONTROLLERS\CommentManagermentController.cs" />
